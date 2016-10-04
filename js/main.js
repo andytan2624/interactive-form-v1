@@ -1,3 +1,4 @@
+'use strict';
 // Categorize colours in the category they belong to
 var tshirtDesignArray = {
     'js puns': ['cornflowerblue', 'darkslategrey', 'gold'],
@@ -86,7 +87,7 @@ $(document).ready(function(){
          * value to the totalAmount value
          */
         $.each($('input[type="checkbox"]'), function(index, value) {
-            $el = $(this);
+            var $el = $(this);
             if ($el.is(":checked")) {
                 // If the activity selected is on at the same time as another activity
                 // Then disabled that activity
